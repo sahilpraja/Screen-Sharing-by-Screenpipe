@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Video element styling */
+video {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#start {
+    background-color: #28a745;
+    color: white;
+}
+
+button#stop {
+    background-color: #dc3545;
+    color: white;
+}
+
+button#record {
+    background-color: #ffc107;
+    color: black;
+}
+
+button#upload {
+    background-color: #17a2b8;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Button hover and active states */
+button:not(:disabled):hover {
+    transform: scale(1.05);
+}
+
+button:not(:disabled):active {
+    transform: scale(0.95);
+}
+
+/* Error message styling */
+#error {
+    font-size: 1rem;
+    color: #dc3545;
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    video {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

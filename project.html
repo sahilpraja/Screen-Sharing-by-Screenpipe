@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Screen Sharing with Recording</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Live Screen Sharing with Recording</h1>
+    </header>
+    <main>
+        <!-- Video element to display the shared screen -->
+        <section aria-labelledby="screen-sharing">
+            <h2 id="screen-sharing" class="visually-hidden">Screen Sharing</h2>
+            <video id="video" autoplay aria-label="Shared screen video"></video>
+        </section>
+        <!-- Buttons to control screen sharing and recording -->
+        <section aria-labelledby="controls">
+            <h2 id="controls" class="visually-hidden">Controls</h2>
+            <div>
+                <button id="start" aria-live="polite">Start Screen Sharing</button>
+                <button id="stop" disabled aria-live="polite">Stop Screen Sharing</button>
+                <button id="record" disabled aria-live="polite">Start Recording</button>
+                <button id="upload" disabled aria-live="polite">Upload Recording</button>
+            </div>
+        </section>
+        <!-- Placeholder for error messages -->
+        <section aria-labelledby="error-message">
+            <h2 id="error-message" class="visually-hidden">Error Messages</h2>
+            <p id="error" role="alert" style="color: red; display: none;"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Screen Sharing App</p>
+    </footer>
+    <!-- Link to the JavaScript file for functionality -->
+    <script src="project.js"></script>
+</body>
+</html>
